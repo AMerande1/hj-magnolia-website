@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HJ Magnolia Mental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: #354a63cc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #2e3b4ecc;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 1rem;
+      border-radius: 10px;
+    }
+    .cta {
+      background-color: #e0ebf5cc;
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #354a63cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .booking-icon {
+      display: block;
+      margin: 1rem auto 2rem auto;
+      width: 60px;
+      cursor: pointer;
+    }
+    img.inline-photo {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .close-btn {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close-btn:hover {
+      color: black;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    button.submit-btn {
+      margin-top: 1.5rem;
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button.submit-btn:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HJ Magnolia</h1>
+    <p>Compassionate, personalized care for all children</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#team">Our Team</a>
+    <a href="#contact">Contact</a>
+    <a href="#" id="bookNowBtn">Schedule a Visit</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>HJ Magnolia is dedicated to providing compassionate, culturally competent care tailored to the needs of our diverse community. Our mission is to support mental wellness by creating a healing space where individuals and families can thrive.</p>
+    <p>We serve children and families through a variety of therapeutic and support services designed to meet the unique needs of each child. Our goal is to foster emotional growth, resilience, and well-being in a safe and nurturing environment.</p>
+    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Children playing in park" class="inline-photo" />
+    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80" alt="Kids running outside" class="inline-photo" />
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Individual Therapy</li>
+      <li>Group Therapy</li>
+      <li>Medication Management</li>
+      <li>Psychiatric Evaluations</li>
+      <li>Case Management</li>
+      <li>Trauma-Informed Care</li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <p>
+      Our team is composed of highly qualified professionals dedicated to providing exceptional care to children. Leading the team is a clinician with a doctoral degree in mental health, bringing advanced expertise and a deep commitment to evidence-based practices. Supporting the clinical care are experienced psychiatric nurse practitioners and compassionate nurses who provide comprehensive healthcare tailored to each child’s needs. Our skilled mental health technicians are well-trained and committed to delivering attentive, personalized support in daily activities and therapeutic interventions. Together, we work collaboratively to create a safe, nurturing, and effective environment that fosters emotional growth, resilience, and healing for every child in our care.
+    </p>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>Contact Us</h2>
+    <p>
+      Email: <a href="mailto:hmmagnolia@gmail.com">hmmagnolia@gmail.com</a><br />
+      Phone: 952-855-6455<br />
+      Address: 16222 Grasmere Dr, Cypress, TX 77249
+    </p>
+    <a href="mailto:hmmagnolia@gmail.com" class="button">Get in Touch</a>
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Book Now" class="booking-icon" id="bookingIcon" />
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HJ Magnolia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
